@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS intro and type</title>
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <!--
+        CSS Selector
+          1. select by tag name
+          2. select by class name
+          3. select by id
+
+        inline > id > class > tag
+    -->
+    <style>
+      div {
+        background-color: blue;
+        color: white;
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 5px;
+      }
+
+      p {
+        background-color: yellow;
+        color: black;
+        border: 1px solid green;
+        border-radius: 5px;
+      }
+
+      #para-id {
+        background-color: yellowgreen;
+      }
+      .para-tag {
+        background-color: red;
+        width: 250px;
+        height: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+        Type of CSS
+        1. inline CSS
+        2. Internal CSS
+        3. External CSS
+    -->
+
+    <div
+      style="
+        background-color: rgb(57, 57, 5);
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 5px;
+      "
+    >
+      This is css inline
+    </div>
+
+    <div>This is for internal Styling</div>
+    <div style="background-color: brown; color: yellow">
+      This is for internal Styling-2
+    </div>
+    <div>
+      <p>This is a paragraph</p>
+    </div>
+
+    <p class="para-tag">
+      In the year 2041, my parents gambled and deposited all their life’s
+      earning with a private company who was planning a mission to take humans
+      to hospitable Mars by the year 2050. Overpopulation was the whole Earth’s
+      problem, and several companies promised people to take them to Mars.
+      Everyone was betting all of their savings on one of these enterprises. My
+      parents did too.
+    </p>
+
+    <p class="para-tag" id="para-id" style="background-color: cadetblue">
+      Unfortunately, of some thirty odd companies who took the deposits, only
+      one could successfully attempt a mission to Mars but could take only seven
+      people at a time. All others got shut down. It had been nine years since
+      we’ve lost all our money.
+    </p>
+
+    <p class="para-tag">
+      Three years ago, I joined a new program by the United Nations, where the
+      government pays me to attempt dangerous activities. The program was
+      designed to bring down the population of the Earth down and also find
+      human subjects for dangerous science experiments. The failure of space
+      companies made the government create the program. Poor people like me
+      participate in the program to feed their families.
+    </p>
+
+    <p class="external">
+      Tomorrow I am going to another experiment. I’ve been told I’ll be given
+      variable doses of poison so that scientists can calculate what the minimum
+      quantity of poison required to kill a human being is.
+    </p>
+
+    <figure class="fig">
+      <img
+        class="fig-img"
+        src="https://w0.peakpx.com/wallpaper/588/847/HD-wallpaper-ironman-jfcx-rsj.jpg"
+        alt="ironman"
+      />
+      <figcaption class="fig-caption">Anything is possible.</figcaption>
+    </figure>
+  </body>
+</html>
