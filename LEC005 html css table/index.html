@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+  </head>
+  <style>
+    table {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    tr th {
+      background-color: lightblue;
+    }
+    th,
+    td {
+      border: 1px solid black;
+      height: 15px;
+    }
+  </style>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Sr.no</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Class</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Anay</td>
+          <td>10</td>
+          <td>11<sup>th</sup></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Anaya</td>
+          <td>9</td>
+          <td>6<sup>th</sup></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Arun</td>
+          <td>12</td>
+          <td>8<sup>th</sup></td>
+        </tr>
+        <tr>
+          <td colspan="4">a</td>
+        </tr>
+
+        <tr>
+          <td>x</td>
+          <td rowspan="2">y</td>
+          <td colspan="2">z</td>
+        </tr>
+        <tr>
+          <td>j</td>
+          <td>k</td>
+          <td>l</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
